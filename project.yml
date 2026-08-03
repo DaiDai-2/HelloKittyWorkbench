@@ -1,0 +1,51 @@
+name: HelloKittyWorkbench
+options:
+  bundleIdPrefix: com.hellokitty.workbench
+  deploymentTarget:
+    iOS: "15.0"
+  xcodeVersion: "14.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.7"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    INFOPLIST_FILE: HelloKittyWorkbench/Resources/Info.plist
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  HelloKittyWorkbench:
+    type: application
+    platform: iOS
+    sources:
+      - path: HelloKittyWorkbench
+        name: HelloKittyWorkbench
+        type: group
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hellokitty.workbench
+        INFOPLIST_FILE: HelloKittyWorkbench/Resources/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES
+    info:
+      path: HelloKittyWorkbench/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: "HelloKitty工作台"
+        UILaunchStoryboardName: LaunchScreen
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIStatusBarStyle: UIStatusBarStyleDefault
+        UIUserInterfaceStyle: Automatic
+    dependencies: []

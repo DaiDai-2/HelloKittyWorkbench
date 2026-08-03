@@ -1,0 +1,12 @@
+# Xcode
+*.xcworkspace
+xcuserdata/
+DerivedData/
+*.xcuserstate
+
+# macOS
+.DS_Store
+Thumbs.db
+
+# Project files
+*.xcodeproj
