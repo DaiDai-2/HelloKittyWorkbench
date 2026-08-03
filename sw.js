@@ -1,5 +1,5 @@
 // HelloKitty 个人工作台 - Service Worker
-const CACHE_NAME = 'hk-workbench-v1';
+const CACHE_NAME = 'hk-workbench-v2';
 const PRE_CACHE = [
   './',
   './index.html',
