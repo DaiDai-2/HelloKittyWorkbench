@@ -6,6 +6,7 @@ on:
     paths:
       - 'PWA/**'
       - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:  # 允许手动触发
 
 # 允许 GitHub Pages 部署权限
 permissions:
