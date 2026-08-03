@@ -1893,7 +1893,7 @@ function importData(input){
 function init(){
   // 注册 Service Worker
   if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('sw.js').catch(()=>{});
+    navigator.serviceWorker.register('sw.js',{scope:'./'}).catch(()=>{});
   }
 
   // 确保事务分类存在

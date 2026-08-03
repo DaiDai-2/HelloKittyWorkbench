@@ -1,11 +1,11 @@
 // HelloKitty 个人工作台 - Service Worker
 const CACHE_NAME = 'hk-workbench-v1';
 const PRE_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png'
+  './',
+  './index.html',
+  './manifest.json',
+  './icons/icon-192.png',
+  './icons/icon-512.png'
 ];
 
 // 安装：预缓存核心文件
